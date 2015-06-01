@@ -152,7 +152,6 @@ class BitpayInvoicePlugin extends AbstractPlugin
             return $data->get('invoice_id');
         }
 
-        $options = $data->get('options');
         $invoice = $this->bitpay->createInvoice($data->get('orderId'), $transaction->getRequestedAmount(), $data->get('posData'), $data->get('options'));
 
         $this->throwUnlessSuccessResponse($invoice, $transaction);
