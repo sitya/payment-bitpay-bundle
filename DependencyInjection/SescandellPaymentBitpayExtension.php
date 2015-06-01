@@ -43,5 +43,7 @@ class SescandellPaymentBitpayExtension extends Extension
 
         $container->setAlias('payment.bitpay.request', $config['services']['request']);
         $container->setAlias('payment.bitpay.encrypter', $config['services']['encrypter']);
+
+	    $container->setParameter('payment.bitpay.encrypter.key', $config['api_key']);
     }
 }
