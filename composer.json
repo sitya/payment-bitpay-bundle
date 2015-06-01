@@ -11,11 +11,17 @@
             "email": "stephane.escandell@gmail.com"
         }
     ],
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "git@github.com:kytart/bitpay-client.git"
+      }
+    ],
     "require": {
         "php": ">=5.3.3",
         "symfony/framework-bundle": "~2.4",
         "jms/payment-core-bundle": "~1.0",
-        "sescandell/bitpay-client": "~1.0"
+        "sescandell/bitpay-client": "dev-master"
     },
     "require-dev": {
         "symfony/browser-kit": "*"

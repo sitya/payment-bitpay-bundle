@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "699253437aba9b9524b876d59fe72c71",
+    "hash": "3a29eb71d2a39560b6b50095b08432aa",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -236,16 +237,16 @@
         },
         {
             "name": "sescandell/bitpay-client",
-            "version": "v1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sescandell/bitpay-client.git",
-                "reference": "9f8ab9cf5f62df60ad4e0510c6c4ec91f6b29050"
+                "url": "https://github.com/kytart/bitpay-client.git",
+                "reference": "bccf499ef57a12a82cffda0767bb5a88ff898c9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sescandell/bitpay-client/zipball/9f8ab9cf5f62df60ad4e0510c6c4ec91f6b29050",
-                "reference": "9f8ab9cf5f62df60ad4e0510c6c4ec91f6b29050",
+                "url": "https://api.github.com/repos/kytart/bitpay-client/zipball/bccf499ef57a12a82cffda0767bb5a88ff898c9a",
+                "reference": "bccf499ef57a12a82cffda0767bb5a88ff898c9a",
                 "shasum": ""
             },
             "require": {
@@ -266,13 +267,15 @@
                     "BitPay": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "description": "BitPay PHP Client",
             "keywords": [
                 "bitcoin",
                 "bitpay"
             ],
-            "time": "2014-01-19 16:48:55"
+            "support": {
+                "source": "https://github.com/kytart/bitpay-client/tree/master"
+            },
+            "time": "2015-06-01 20:52:55"
         },
         {
             "name": "symfony/config",
@@ -1178,17 +1181,15 @@
             "time": "2013-12-29 20:33:52"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "sescandell/bitpay-client": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
