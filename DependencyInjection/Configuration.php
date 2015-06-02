@@ -31,7 +31,7 @@ class Configuration implements ConfigurationInterface
                         ->addDefaultsIfNotSet()
                         ->children()
                             ->booleanNode('full')->isRequired()->defaultTrue()->end()
-                            ->scalarNode('url')->isRequired()->cannotBeEmpty()->end()
+                            ->scalarNode('url')->end()
                             ->scalarNode('email')->end()
                         ->end()
                     ->end()
